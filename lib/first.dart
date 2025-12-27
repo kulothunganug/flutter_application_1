@@ -141,7 +141,7 @@ class HomePage extends StatelessWidget {
                 },
               ),
 
-              // 📊 PROFIT ESTIMATOR
+              
               _featureTile(
                 image: 'assets/images/profityield.jpg',
                 title: 'Profit Yield Estimator',
