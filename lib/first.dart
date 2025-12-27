@@ -33,7 +33,7 @@ class HomePage extends StatelessWidget {
           child: Column(
             children: [
 
-              // 🌤 WEATHER CARD
+              
               _whiteCard(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -84,7 +84,7 @@ class HomePage extends StatelessWidget {
 
               const SizedBox(height: 18),
 
-              // 📷 CAMERA CARD
+              
               _whiteCard(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -113,7 +113,7 @@ class HomePage extends StatelessWidget {
 
               const SizedBox(height: 18),
 
-              // 🤖 CHATBOT
+              
               _featureTile(
                 image: 'assets/images/chatbot.jpg',
                 title: 'Crop Advisor Chatbot',
@@ -127,7 +127,7 @@ class HomePage extends StatelessWidget {
                 },
               ),
 
-              // 🌱 CROP CALENDAR
+              
               _featureTile(
                 image: 'assets/images/cropcalendar.jpg',
                 title: 'Crop Calendar',
