@@ -5,6 +5,7 @@ import 'package:flutter_application_1/screens/crop_category_screen.dart';
 import 'package:flutter_application_1/screens/plant_disease_detection_screen.dart';
 import 'package:flutter_application_1/screens/profit_yield_screen.dart';
 import 'package:flutter_application_1/screens/tricks_screen.dart';
+import 'package:flutter_application_1/screens/schemes.dart'; // ✅ NEW IMPORT
 import 'package:intl/intl.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -14,10 +15,10 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(
-        255,
-        157,
-        225,
-        151,
+        245,
+        166,
+        224,
+        139,
       ), // 🌿 light green background
       body: SafeArea(
         child: SingleChildScrollView(
@@ -122,6 +123,17 @@ class HomeScreen extends StatelessWidget {
                 onTap: () => Navigator.push(
                   context,
                   MaterialPageRoute(builder: (_) => const TricksScreen()),
+                ),
+              ),
+
+              /// 🏛️ SCHEMES FOR AGRICULTURE ✅ NEW FEATURE
+              _featureWhiteCard(
+                image: 'assets/images/schemes.jpg', // ✅ add this image in assets
+                title: 'Schemes for Agriculture',
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const GovtSchemesPage()
+                  ),
                 ),
               ),
             ],
